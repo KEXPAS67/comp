@@ -11,7 +11,12 @@
         color: white;
         padding: 40px;
     }
-
+h2 {
+    margin-top: 40px; /* space above each section */
+    margin-bottom: 20px; /* space below each section */
+    border-bottom: 2px solid #ccc; /* optional: adds a nice underline */
+    padding-bottom: 10px; /* optional: spacing for underline */
+}
     h1 {
         text-align: center;
         margin-bottom: 40px;
