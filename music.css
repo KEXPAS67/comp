@@ -1,81 +1,102 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Segoe UI', sans-serif;
-    }
+/* Body background and text */
+body {
+    background: linear-gradient(135deg, #1e1e2f, #3a0ca3);
+    color: white;
+    padding: 40px;
+}
 
-    body {
-        background: linear-gradient(135deg, #1e1e2f, #3a0ca3);
-        color: white;
-        padding: 40px;
-    }
+/* Main Title */
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+/* Language Section Titles */
 h2 {
     margin-top: 40px; /* space above each section */
     margin-bottom: 20px; /* space below each section */
-    border-bottom: 2px solid #ccc; /* optional: adds a nice underline */
-    padding-bottom: 10px; /* optional: spacing for underline */
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
 }
-    h1 {
-        text-align: center;
-        margin-bottom: 40px;
-        font-size: 2.5rem;
-        letter-spacing: 2px;
-    }
 
-    .container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 20px;
-    }
+/* Container no longer a grid */
+.container {
+    display: block; /* block so sections stack vertically */
+}
 
-    .card {
-        background: rgba(255, 255, 255, 0.08);
-        border-radius: 15px;
-        padding: 20px;
-        backdrop-filter: blur(10px);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        position: relative;
-        overflow: hidden;
-    }
+/* Each language section stacked vertically with space */
+.language-section {
+    margin-bottom: 50px;
+}
 
-    .card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 25px rgba(0,0,0,0.3);
-    }
+/* Cards row: flex container to align cards horizontally, wrapping to new lines */
+.cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* space between cards */
+}
 
-    .card h2 {
-        font-size: 1.4rem;
-        margin-bottom: 10px;
-    }
+/* Card style */
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
 
-    .language {
-        display: inline-block;
-        padding: 5px 10px;
-        font-size: 0.8rem;
-        border-radius: 20px;
-        background: #7209b7;
-        margin-bottom: 10px;
-    }
+    /* Flex basis for responsive width, min width 220px */
+    flex: 1 1 220px;
+    max-width: 250px; /* Optional: max width for neat card size */
+}
 
-    .rank {
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        font-size: 1.2rem;
-        font-weight: bold;
-        color: #f72585;
-    }
+/* Card hover effect */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
 
-    .card p {
-        font-size: 0.9rem;
-        opacity: 0.85;
-    }
+/* Language label styling */
+.language {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    background: #7209b7;
+    margin-bottom: 10px;
+}
 
-    footer {
-        text-align: center;
-        margin-top: 40px;
-        font-size: 0.9rem;
-        opacity: 0.7;
-    }
+/* Rank position */
+.rank {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f72585;
+}
+
+/* Card paragraph text */
+.card p {
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
