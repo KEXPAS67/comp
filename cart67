@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top 10 Music Artists</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+        background: linear-gradient(135deg, #1e1e2f, #3a0ca3);
+        color: white;
+        padding: 40px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 15px;
+        padding: 20px;
+        backdrop-filter: blur(10px);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+    }
+
+    .card h2 {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+
+    .language {
+        display: inline-block;
+        padding: 5px 10px;
+        font-size: 0.8rem;
+        border-radius: 20px;
+        background: #7209b7;
+        margin-bottom: 10px;
+    }
+
+    .rank {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #f72585;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+        opacity: 0.85;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 0.9rem;
+        opacity: 0.7;
+    }
+</style>
+
+</head>
+<body>
+
+<h1>🎵 Top 10 Music Artists (Multi-Language)</h1>
+
+<div class="container">
+<h4>English</h4>
+    <div class="card">
+        <div class="rank">#1</div>
+        <span class="language">English</span>
+        <h2>Taylor Swift</h2>
+        <p>Pop sensation known for storytelling and chart-topping albums.</p>
+    </div>
+<div class="card">
+        <div class="rank">#2</div>
+        <span class="language">English</span>
+        <h2>Drake</h2>
+        <pRap superstar known for blending hip-hop and R&B with chart-topping hits.p>
+    </div>
+<div class="card">
+        <div class="rank">#3</div>
+        <span class="language">English</span>
+        <h2>The Weekend</h2>
+        <p>Dark R&B icon known for haunting vocals and cinematic, chart-topping hits.</p>
+    </div>
+<div class="card">
+        <div class="rank">#4</div>
+        <span class="language">English</span>
+        <h2>Sabrina Carpenter</h2>
+        <p>Pop star known for catchy hits, sharp lyrics, and confident, playful style..</p>
+    </div>
+<div class="card">
+        <div class="rank">#5</div>
+        <span class="language">English</span>
+        <h2>Billie Eilish</h2>
+        <p>Alternative pop star known for whispery vocals, dark aesthetics, and genre-bending hits.p>
+    </div>
+<div class="card">
+        <div class="rank">#6</div>
+        <span class="language">English</span>
+        <h2>Harry Styles</h2>
+        <p>Pop-rock star known for soulful vocals, bold fashion, and chart-topping hits.p>
+    </div>
+<div class="card">
+        <div class="rank">#7</div>
+        <span class="language">English</span>
+        <h2>Bruno Mars</h2>
+        <p>Pop-rock star known for soulful vocals, bold fashion, and chart-topping hits..</p>
+    </div>
+<div class="card">
+        <div class="rank">#8</div>
+        <span class="language">English</span>
+        <h2>Kendrick Lamar</h2>
+        <p>Hip-hop visionary known for powerful storytelling, lyrical depth, and socially conscious music.<p>
+    </div>
+<div class="card">
+        <div class="rank">#9</div>
+        <span class="language">English</span>
+        <h2>Justin Beiber</h2>
+        <p>Pop sensation known for catchy hits, smooth vocals, and global fan following..</p>
+    </div>
+<div class="card">
+        <div class="rank">#10</div>
+        <span class="language">English</span>
+        <h2>Post Malone</h2>
+        <p>Genre-blending star known for melodic rap, chart-topping hits, and distinctive style.</p>
+    </div>
+
+
+<h4>hindi</h4>
+
+    <div class="card">
+        <div class="rank">#1</div>
+        <span class="language">Hindi</span>
+        <h2>Arijit Singh</h2>
+        <p>Melodic powerhouse known for soulful Bollywood ballads and emotional hits.</p>
+    </div>
+ <div class="card">
+        <div class="rank">#2</div>
+        <span class="language">Hindi</span>
+        <h2>Shreya Ghoshal</h2>
+        <p>Versatile vocalist celebrated for classical finesse and chart-topping songs.</p>
+    </div>
+ <div class="card">
+        <div class="rank">#3</div>
+        <span class="language">Hindi</span>
+        <h2>Neha Kakkar</h2>
+        <p>Energetic pop star known for catchy tracks and massive streaming appeal.</p>
+    </div>
+ <div class="card">
+        <div class="rank">#4</div>
+        <span class="language">Hindi</span>
+        <h2>Jubin Nautiyal</h2>
+        <p>Romantic voice delivering heartfelt ballads and contemporary hits..</p>
+    </div>
+   <div class="card">
+        <div class="rank">#5</div>
+        <span class="language">Hindi</span>
+        <h2>Badshah</h2>
+        <pHip-hop and pop icon known for party anthems and chart domination.</p>
+    </div>
+   <div class="card">
+        <div class="rank">#6</div>
+        <span class="language">Hindi</span>
+        <h2>Diljit Doshanjh</h2>
+        <p>Punjabi-Hindi sensation blending folk, pop, and cinema hits.</p>
+    </div>
+   <div class="card">
+        <div class="rank">#7</div>
+        <span class="language">Hindi</span>
+        <h2>Sonu Nigam</h2>
+        <p>Legendary voice known for timeless Bollywood classics and versatile range.</p>
+    </div>
+   <div class="card">
+        <div class="rank">#8</div>
+        <span class="language">Hindi</span>
+        <h2>AP Dhillon</h2>
+        <p>Contemporary Punjabi-Hindi star blending rap, pop, and urban vibes.</p>
+    </div>
+   <div class="card">
+        <div class="rank">#9</div>
+        <span class="language">Hindi</span>
+        <h2>Armaan Malik</h2>
+        <p>Versatile pop voice blending Bollywood hits with independent and international styles.</p>
+    </div>
+   <div class="card">
+        <div class="rank">#10</div>
+        <span class="language">Hindi</span>
+        <h2>Alka Yagnik</h2>
+        <p>Legendary playback diva known for timeless Bollywood ballads and massive streaming records.p>
+    </div>
+  
+<h4>Nepali</h4>
+
+    <div class="card">
+        <div class="rank">#1</div>
+        <span class="language">Nepali</span>
+        <h2>Sajjan Raj Vaidya</h2>
+        <p>Modern Nepali artist loved for emotional indie songs.</p>
+    </div>
+  
+    <div class="card">
+        <div class="rank">#2</div>
+        <span class="language">Nepali</span>
+        <h2>Sajjan Raj Vaidya</h2>
+        <p>Modern Nepali artist loved for emotional indie songs.</p>
+    </div>
+  
+    <div class="card">
+        <div class="rank">#3</div>
+        <span class="language">Nepali</span>
+        <h2>Sajjan Raj Vaidya</h2>
+        <p>Modern Nepali artist loved for emotional indie songs.</p>
+    </div>
+  
+    <div class="card">
+        <div class="rank">#4</div>
+        <span class="language">Nepali</span>
+        <h2>Sajjan Raj Vaidya</h2>
+        <p>Modern Nepali artist loved for emotional indie songs.</p>
+    </div>
+  
+    <div class="card">
+        <div class="rank">#5</div>
+        <span class="language">Nepali</span>
+        <h2>Sajjan Raj Vaidya</h2>
+        <p>Modern Nepali artist loved for emotional indie songs.</p>
+    </div>
+  
+    <div class="card">
+        <div class="rank">#6</div>
+        <span class="language">Nepali</span>
+        <h2>Sajjan Raj Vaidya</h2>
+        <p>Modern Nepali artist loved for emotional indie songs.</p>
+    </div>
+  
+    <div class="card">
+        <div class="rank">#7</div>
+        <span class="language">Nepali</span>
+        <h2>Sajjan Raj Vaidya</h2>
+        <p>Modern Nepali artist loved for emotional indie songs.</p>
+    </div>
+  
+    <div class="card">
+        <div class="rank">#8</div>
+        <span class="language">Nepali</span>
+        <h2>Sajjan Raj Vaidya</h2>
+        <p>Modern Nepali artist loved for emotional indie songs.</p>
+    </div>
+  
+    <div class="card">
+        <div class="rank">#9</div>
+        <span class="language">Nepali</span>
+        <h2>Sajjan Raj Vaidya</h2>
+        <p>Modern Nepali artist loved for emotional indie songs.</p>
+    </div>
+  
+    <div class="card">
+        <div class="rank">#10</div>
+        <span class="language">Nepali</span>
+        <h2>Sajjan Raj Vaidya</h2>
+        <p>Modern Nepali artist loved for emotional indie songs.</p>
+    </div>
+  
+
+</div>
+
+<footer>
+    © 2026 Music Showcase | Designed with HTML & CSS
+</footer>
+
+</body>
+</html>
