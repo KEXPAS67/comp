@@ -1,59 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Shop Account</title>
-   
+    <title>My Shop Account</title>
     <link rel="stylesheet" href="music.css">
 </head>
 <body>
 
+<header>
+    <h1>My Shop</h1>
+    <p>Select your items below</p>
+</header>
 
-    <header>
-        <h1>My Shop Account</h1>
-        <p>Select your items below</p>
-    </header>
+<div class="container">
+    <table>
+        <tr>
+            <th>Select</th>
+            <th>Item</th>
+            <th>Price ($)</th>
+            <th>Quantity</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox" class="item" data-price="1"></td>
+            <td>Apple</td>
+            <td>1</td>
+            <td><input type="number" class="qty" value="1" min="1"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" class="item" data-price="0.5"></td>
+            <td>Banana</td>
+            <td>0.5</td>
+            <td><input type="number" class="qty" value="1" min="1"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" class="item" data-price="0.8"></td>
+            <td>Orange</td>
+            <td>0.8</td>
+            <td><input type="number" class="qty" value="1" min="1"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" class="item" data-price="1.2"></td>
+            <td>Milk</td>
+            <td>1.2</td>
+            <td><input type="number" class="qty" value="1" min="1"></td>
+        </tr>
+    </table>
 
-    <div class="container">
-        <form action="#" method="post">
-            <table>
-                <tr>
-                    <th>Select</th>
-                    <th>Item</th>
-                    <th>Price ($)</th>
-                    <th>Quantity</th>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" name="item1"></td>
-                    <td>Apple</td>
-                    <td>1</td>
-                    <td><input type="number" name="qty1" value="1" min="1"></td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" name="item2"></td>
-                    <td>Banana</td>
-                    <td>0.5</td>
-                    <td><input type="number" name="qty2" value="1" min="1"></td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" name="item3"></td>
-                    <td>Orange</td>
-                    <td>0.8</td>
-                    <td><input type="number" name="qty3" value="1" min="1"></td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" name="item4"></td>
-                    <td>Milk</td>
-                    <td>1.2</td>
-                    <td><input type="number" name="qty4" value="1" min="1"></td>
-                </tr>
-            </table>
+    <div class="total">
+        Total: $<span id="total">0.00</span>
+    </div>
+</div>
 
-            
-            <div class="total">
-                Total: $0.00
-            </div>
-            <script>
-   
+<script>
+
     var items = document.querySelectorAll('.item');
     var qtys = document.querySelectorAll('.qty');
     var totalDisplay = document.getElementById('total');
@@ -70,17 +68,11 @@
         totalDisplay.textContent = total.toFixed(2);
     }
 
-   
     for (var i = 0; i < items.length; i++) {
         items[i].addEventListener('change', calculateTotal);
         qtys[i].addEventListener('input', calculateTotal);
     }
 </script>
-
-            <br>
-            <input type="submit" value="Place Order">
-        </form>
-    </div>
 
 </body>
 </html>
