@@ -52,6 +52,30 @@
             <div class="total">
                 Total: $0.00
             </div>
+            <script>
+   
+    var items = document.querySelectorAll('.item');
+    var qtys = document.querySelectorAll('.qty');
+    var totalDisplay = document.getElementById('total');
+
+    function calculateTotal() {
+        var total = 0;
+        for (var i = 0; i < items.length; i++) {
+            if (items[i].checked) {
+                var price = parseFloat(items[i].dataset.price);
+                var quantity = parseInt(qtys[i].value);
+                total += price * quantity;
+            }
+        }
+        totalDisplay.textContent = total.toFixed(2);
+    }
+
+   
+    for (var i = 0; i < items.length; i++) {
+        items[i].addEventListener('change', calculateTotal);
+        qtys[i].addEventListener('input', calculateTotal);
+    }
+</script>
 
             <br>
             <input type="submit" value="Place Order">
